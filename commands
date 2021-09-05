@@ -1,0 +1,2 @@
+//Create App
+yarn create react-app lottery-web --template typescript
