@@ -1,2 +1,7 @@
 //Create App
 yarn create react-app lottery-web --template typescript
+
+//web3
+yarn add web3
+
+.send({ gas: '1000000', gasPrice: '5000000000', from: accounts[0] });
