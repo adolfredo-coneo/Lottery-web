@@ -1,16 +1,16 @@
 import web3 from './web3';
-import AbiItem from "web3";
+import { AbiItem } from 'web3-utils';
 
-const address = '0x9C604fadac1c2DB6ee74f451538AcA91b6387618';
+const address = '0xD772a51058DBa8B7B1BA0409848d4377894Dcb6f';
 
-const abi: AbiItem = [
+const abi: AbiItem[] = [
   {
     inputs: [],
     stateMutability: 'nonpayable',
     type: 'constructor',
     constant: undefined,
     payable: undefined,
-    signature: 'constructor',
+    //signature: 'constructor',
   },
   {
     inputs: [],
@@ -20,27 +20,33 @@ const abi: AbiItem = [
     type: 'function',
     constant: undefined,
     payable: true,
-    signature: '0xe97dcb62',
+    //signature: '0xe97dcb62',
   },
   {
     inputs: [],
     name: 'getPlayers',
-    outputs: [[Object]],
+    outputs: [
+      {
+        internalType: 'address payable[]',
+        name: '',
+        type: 'address[]',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
     constant: true,
     payable: undefined,
-    signature: '0x8b5b9ccc',
+    //signature: '0x8b5b9ccc',
   },
   {
     inputs: [],
     name: 'manager',
-    outputs: [[Object]],
+    outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',
     constant: true,
     payable: undefined,
-    signature: '0x481c6a75',
+    //signature: '0x481c6a75',
   },
   {
     inputs: [],
@@ -50,17 +56,17 @@ const abi: AbiItem = [
     type: 'function',
     constant: undefined,
     payable: undefined,
-    signature: '0x5d495aea',
+    //signature: '0x5d495aea',
   },
   {
-    inputs: [[Object]],
+    inputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
     name: 'players',
-    outputs: [[Object]],
+    outputs: [{ internalType: 'address payable', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',
     constant: true,
     payable: undefined,
-    signature: '0xf71d96cb',
+    //signature: '0xf71d96cb',
   },
 ];
 

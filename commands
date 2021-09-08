@@ -5,3 +5,13 @@ yarn create react-app lottery-web --template typescript
 yarn add web3
 
 .send({ gas: '1000000', gasPrice: '5000000000', from: accounts[0] });
+
+
+//GIT
+git init
+git add .
+git commit -m "Initializing Repo"
+git branch -M main
+git remote add origin https://github.com/adolfredo-coneo/Lottery-web.git
+git push -u origin main
+
