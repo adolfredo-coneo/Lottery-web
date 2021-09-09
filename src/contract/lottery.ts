@@ -1,4 +1,4 @@
-import web3 from './web3';
+import web3 from '../metamask/web3';
 import { AbiItem } from 'web3-utils';
 
 const address = '0xD772a51058DBa8B7B1BA0409848d4377894Dcb6f';
